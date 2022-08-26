@@ -1,0 +1,7 @@
+*/*/.DS_Store
+*/.DS_Store
+.DS_Store
+
+data/netsres59/model_data_input
+# tpcc query output is too large, so ignore
+data/netsres59/*/*tpcc*
