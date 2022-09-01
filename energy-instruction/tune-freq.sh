@@ -21,7 +21,7 @@ function run_test () {
     cpupower frequency-set -d ${FREQ} 2>&1 > /dev/null
     cpupower frequency-set -u ${FREQ} 2>&1 > /dev/null
     sleep ${SLEEP}
-    echo ${FREQ} ${THREADS}
+    #echo ${FREQ} ${THREADS}
     sysbench cpu --threads=${THREADS}  --time=${RUNTIME} run 2>&1 > /dev/null
 }
 
@@ -46,8 +46,8 @@ do
         run_test
         power_saving
         curl "http://${IP}:9090/api/v1/query?query=node_energy_stat[${TOTAL}s]" | jq .data.result[].metric > result/freq-test-${THREADS}-${FREQ}.json
-        cat result/freq-test-${THREADS}-${FREQ}.json | jq -r '[(.node_curr_energy_in_core|tonumber) / (.curr_cpu_instructions|tonumber)]' |grep -e [0-9] > result/energy_per_instr-${THREADS}-${FREQ}.dat
-        cat result/freq-test-${THREADS}-${FREQ}.json | jq -r '[(.node_curr_energy_in_core|tonumber)]' |grep -e [0-9] > result/energy-${THREADS}-${FREQ}.dat
-        cat result/freq-test-${THREADS}-${FREQ}.json | jq -r '[(.node_curr_cpu_instructions|tonumber)]' |grep -e [0-9] > result/instruction-${THREADS}-${FREQ}.dat
+        cat result/freq-test-${THREADS}-${FREQ}.json | jq -r '[(.node_curr_energy_in_core_joule|tonumber) / (.node_curr_cpu_instr|tonumber)]' |grep -e [0-9] > result/energy_per_instr-${THREADS}-${FREQ}.dat
+        cat result/freq-test-${THREADS}-${FREQ}.json | jq -r '[(.node_curr_energy_in_core_joule|tonumber)]' |grep -e [0-9] > result/energy-${THREADS}-${FREQ}.dat
+        cat result/freq-test-${THREADS}-${FREQ}.json | jq -r '[(.node_curr_cpu_instr|tonumber)]' |grep -e [0-9] > result/instruction-${THREADS}-${FREQ}.dat
     done    
 done
