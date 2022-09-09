@@ -5,7 +5,7 @@ SLEEP=30
 RUNTIME=120
 TOTAL=`expr ${SLEEP} + ${RUNTIME}`
 
-STEP=5
+STEP=10
 
 NUM_CPU=$(cat /proc/cpuinfo |grep processor |awk '{print $3}'|sort -g|tail -1)
 CPU_STEP=`expr ${NUM_CPU} / ${STEP}`

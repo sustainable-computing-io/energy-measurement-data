@@ -5,9 +5,10 @@ SLEEP=30
 RUNTIME=120
 TOTAL=`expr ${SLEEP} + ${RUNTIME}`
 
-STEP=5
+STEP=10
 
 NUM_CPU=$(cat /proc/cpuinfo |grep processor |awk '{print $3}'|sort -g|tail -1)
+NUM_CPU=`expr ${NUM_CPU} + 1`
 CPU_STEP=`expr ${NUM_CPU} / ${STEP}`
 
 FREQ_LOW=$(cpupower frequency-info -l|tail -1|awk '{print $1}')
@@ -16,7 +17,7 @@ FREQ_RANGE=`expr ${FREQ_HIGH} - ${FREQ_LOW} `
 FREQ_STEP=`expr ${FREQ_RANGE} / ${STEP}`
 FREQ_UNIT="MHz"
 
-echo -n "Utilization,"
+echo -n "CPU Utilization,"
 for II in $(seq 0 ${STEP})
 do  
     FREQ=`expr ${FREQ_LOW} + ${II} \* ${FREQ_STEP}`
