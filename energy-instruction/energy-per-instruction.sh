@@ -5,10 +5,9 @@ SLEEP=30
 RUNTIME=120
 TOTAL=`expr ${SLEEP} + ${RUNTIME}`
 
-STEP=10
+STEP=16
 
-NUM_CPU=$(cat /proc/cpuinfo |grep processor |awk '{print $3}'|sort -g|tail -1)
-NUM_CPU=`expr ${NUM_CPU} + 1`
+NUM_CPU=$(cat /proc/cpuinfo |grep processor | wc -l|sort -g|tail -1)
 CPU_STEP=`expr ${NUM_CPU} / ${STEP}`
 
 FREQ_LOW=$(cpupower frequency-info -l|tail -1|awk '{print $1}')
