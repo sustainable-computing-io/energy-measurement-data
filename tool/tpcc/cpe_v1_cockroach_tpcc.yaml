@@ -1,0 +1,39 @@
+apiVersion: cpe.cogadvisor.io/v1
+kind: Benchmark
+metadata:
+  name: tpcc
+  namespace: default
+spec:
+  benchmarkOperator:
+    name: cockroach
+    namespace: default
+  benchmarkSpec: |
+    template:
+      spec:
+        containers:
+          - name: driver
+            image: ghcr.io/sunya-ch/cockroach/tpcc:latest
+            env:
+            - name: cockroach0
+              value: postgres://root@cockroach-release-cockroachdb-0.cockroach-release-cockroachdb.cockroach-operator-system.svc.cluster.local:26257?sslmode=disable
+            - name: warehouse
+              value: "1000"
+            - name: active_warehouse
+              value: "1000"
+            command: ["/bin/bash", "-c"]
+            args:
+            - /root/tpcc.sh -s -W $warehouse -A $active_warehouse $cockroach0 && cat /root/tpcc-results/tpcc-results-${active_warehouse}.txt
+        restartPolicy: Never
+    backoffLimit: 4
+  parserKey: tpcc
+  repetition: 1
+  interval: 5
+  iterationSpec:
+    iterations:
+    - name: warehouse
+      location: ".template.spec.containers[0].env[name=warehouse].value;.template.spec.containers[0].env[name=active_warehouse].value"
+      values:
+      - "250;250"
+      - "500;500"
+      - "750;750"
+    sequential: true
