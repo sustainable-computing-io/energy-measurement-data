@@ -746,40 +746,6 @@ metadata:
   namespace: cpe-operator-system
 ---
 apiVersion: v1
-data:
-  .dockerconfigjson: eyAiYXV0aHMiOiB7ICJpY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJ1cy5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJ1ay5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJkZS5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJhdS5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJqcC5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJwcml2YXRlLmljci5pbyI6IHsgImF1dGgiOiAiYVdGdFlYQnBhMlY1T2tsRFFrVnlaWFppWVc5blVHSkZVemRUWVdOc01uTTBTa3QzUVZvdExVeHZjRVJyZWt3ek1uUTBTa1V3IiwgInVzZXJuYW1lIjogImlhbWFwaWtleSIsICJlbWFpbCI6ICJpYW1hcGlrZXkiLCAicGFzc3dvcmQiOiAiSUNCRXJldmJhb2dQYkVTN1NhY2wyczRKS3dBWi0tTG9wRGt6TDMydDRKRTAiIH0sInByaXZhdGUudXMuaWNyLmlvIjogeyAiYXV0aCI6ICJhV0Z0WVhCcGEyVjVPa2xEUWtWeVpYWmlZVzluVUdKRlV6ZFRZV05zTW5NMFNrdDNRVm90TFV4dmNFUnJla3d6TW5RMFNrVXciLCAidXNlcm5hbWUiOiAiaWFtYXBpa2V5IiwgImVtYWlsIjogImlhbWFwaWtleSIsICJwYXNzd29yZCI6ICJJQ0JFcmV2YmFvZ1BiRVM3U2FjbDJzNEpLd0FaLS1Mb3BEa3pMMzJ0NEpFMCIgfSwicHJpdmF0ZS51ay5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJwcml2YXRlLmRlLmljci5pbyI6IHsgImF1dGgiOiAiYVdGdFlYQnBhMlY1T2tsRFFrVnlaWFppWVc5blVHSkZVemRUWVdOc01uTTBTa3QzUVZvdExVeHZjRVJyZWt3ek1uUTBTa1V3IiwgInVzZXJuYW1lIjogImlhbWFwaWtleSIsICJlbWFpbCI6ICJpYW1hcGlrZXkiLCAicGFzc3dvcmQiOiAiSUNCRXJldmJhb2dQYkVTN1NhY2wyczRKS3dBWi0tTG9wRGt6TDMydDRKRTAiIH0sInByaXZhdGUuYXUuaWNyLmlvIjogeyAiYXV0aCI6ICJhV0Z0WVhCcGEyVjVPa2xEUWtWeVpYWmlZVzluVUdKRlV6ZFRZV05zTW5NMFNrdDNRVm90TFV4dmNFUnJla3d6TW5RMFNrVXciLCAidXNlcm5hbWUiOiAiaWFtYXBpa2V5IiwgImVtYWlsIjogImlhbWFwaWtleSIsICJwYXNzd29yZCI6ICJJQ0JFcmV2YmFvZ1BiRVM3U2FjbDJzNEpLd0FaLS1Mb3BEa3pMMzJ0NEpFMCIgfSwicHJpdmF0ZS5qcC5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJici5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJwcml2YXRlLmJyLmljci5pbyI6IHsgImF1dGgiOiAiYVdGdFlYQnBhMlY1T2tsRFFrVnlaWFppWVc5blVHSkZVemRUWVdOc01uTTBTa3QzUVZvdExVeHZjRVJyZWt3ek1uUTBTa1V3IiwgInVzZXJuYW1lIjogImlhbWFwaWtleSIsICJlbWFpbCI6ICJpYW1hcGlrZXkiLCAicGFzc3dvcmQiOiAiSUNCRXJldmJhb2dQYkVTN1NhY2wyczRKS3dBWi0tTG9wRGt6TDMydDRKRTAiIH0sImNhLmljci5pbyI6IHsgImF1dGgiOiAiYVdGdFlYQnBhMlY1T2tsRFFrVnlaWFppWVc5blVHSkZVemRUWVdOc01uTTBTa3QzUVZvdExVeHZjRVJyZWt3ek1uUTBTa1V3IiwgInVzZXJuYW1lIjogImlhbWFwaWtleSIsICJlbWFpbCI6ICJpYW1hcGlrZXkiLCAicGFzc3dvcmQiOiAiSUNCRXJldmJhb2dQYkVTN1NhY2wyczRKS3dBWi0tTG9wRGt6TDMydDRKRTAiIH0sInByaXZhdGUuY2EuaWNyLmlvIjogeyAiYXV0aCI6ICJhV0Z0WVhCcGEyVjVPa2xEUWtWeVpYWmlZVzluVUdKRlV6ZFRZV05zTW5NMFNrdDNRVm90TFV4dmNFUnJla3d6TW5RMFNrVXciLCAidXNlcm5hbWUiOiAiaWFtYXBpa2V5IiwgImVtYWlsIjogImlhbWFwaWtleSIsICJwYXNzd29yZCI6ICJJQ0JFcmV2YmFvZ1BiRVM3U2FjbDJzNEpLd0FaLS1Mb3BEa3pMMzJ0NEpFMCIgfSwiZnIyLmljci5pbyI6IHsgImF1dGgiOiAiYVdGdFlYQnBhMlY1T2tsRFFrVnlaWFppWVc5blVHSkZVemRUWVdOc01uTTBTa3QzUVZvdExVeHZjRVJyZWt3ek1uUTBTa1V3IiwgInVzZXJuYW1lIjogImlhbWFwaWtleSIsICJlbWFpbCI6ICJpYW1hcGlrZXkiLCAicGFzc3dvcmQiOiAiSUNCRXJldmJhb2dQYkVTN1NhY2wyczRKS3dBWi0tTG9wRGt6TDMydDRKRTAiIH0sInByaXZhdGUuZnIyLmljci5pbyI6IHsgImF1dGgiOiAiYVdGdFlYQnBhMlY1T2tsRFFrVnlaWFppWVc5blVHSkZVemRUWVdOc01uTTBTa3QzUVZvdExVeHZjRVJyZWt3ek1uUTBTa1V3IiwgInVzZXJuYW1lIjogImlhbWFwaWtleSIsICJlbWFpbCI6ICJpYW1hcGlrZXkiLCAicGFzc3dvcmQiOiAiSUNCRXJldmJhb2dQYkVTN1NhY2wyczRKS3dBWi0tTG9wRGt6TDMydDRKRTAiIH0sImpwMi5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJwcml2YXRlLmpwMi5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9fX0K
-kind: Secret
-metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{".dockerconfigjson":"eyAiYXV0aHMiOiB7ICJpY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJ1cy5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJ1ay5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJkZS5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJhdS5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJqcC5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJwcml2YXRlLmljci5pbyI6IHsgImF1dGgiOiAiYVdGdFlYQnBhMlY1T2tsRFFrVnlaWFppWVc5blVHSkZVemRUWVdOc01uTTBTa3QzUVZvdExVeHZjRVJyZWt3ek1uUTBTa1V3IiwgInVzZXJuYW1lIjogImlhbWFwaWtleSIsICJlbWFpbCI6ICJpYW1hcGlrZXkiLCAicGFzc3dvcmQiOiAiSUNCRXJldmJhb2dQYkVTN1NhY2wyczRKS3dBWi0tTG9wRGt6TDMydDRKRTAiIH0sInByaXZhdGUudXMuaWNyLmlvIjogeyAiYXV0aCI6ICJhV0Z0WVhCcGEyVjVPa2xEUWtWeVpYWmlZVzluVUdKRlV6ZFRZV05zTW5NMFNrdDNRVm90TFV4dmNFUnJla3d6TW5RMFNrVXciLCAidXNlcm5hbWUiOiAiaWFtYXBpa2V5IiwgImVtYWlsIjogImlhbWFwaWtleSIsICJwYXNzd29yZCI6ICJJQ0JFcmV2YmFvZ1BiRVM3U2FjbDJzNEpLd0FaLS1Mb3BEa3pMMzJ0NEpFMCIgfSwicHJpdmF0ZS51ay5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJwcml2YXRlLmRlLmljci5pbyI6IHsgImF1dGgiOiAiYVdGdFlYQnBhMlY1T2tsRFFrVnlaWFppWVc5blVHSkZVemRUWVdOc01uTTBTa3QzUVZvdExVeHZjRVJyZWt3ek1uUTBTa1V3IiwgInVzZXJuYW1lIjogImlhbWFwaWtleSIsICJlbWFpbCI6ICJpYW1hcGlrZXkiLCAicGFzc3dvcmQiOiAiSUNCRXJldmJhb2dQYkVTN1NhY2wyczRKS3dBWi0tTG9wRGt6TDMydDRKRTAiIH0sInByaXZhdGUuYXUuaWNyLmlvIjogeyAiYXV0aCI6ICJhV0Z0WVhCcGEyVjVPa2xEUWtWeVpYWmlZVzluVUdKRlV6ZFRZV05zTW5NMFNrdDNRVm90TFV4dmNFUnJla3d6TW5RMFNrVXciLCAidXNlcm5hbWUiOiAiaWFtYXBpa2V5IiwgImVtYWlsIjogImlhbWFwaWtleSIsICJwYXNzd29yZCI6ICJJQ0JFcmV2YmFvZ1BiRVM3U2FjbDJzNEpLd0FaLS1Mb3BEa3pMMzJ0NEpFMCIgfSwicHJpdmF0ZS5qcC5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJici5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJwcml2YXRlLmJyLmljci5pbyI6IHsgImF1dGgiOiAiYVdGdFlYQnBhMlY1T2tsRFFrVnlaWFppWVc5blVHSkZVemRUWVdOc01uTTBTa3QzUVZvdExVeHZjRVJyZWt3ek1uUTBTa1V3IiwgInVzZXJuYW1lIjogImlhbWFwaWtleSIsICJlbWFpbCI6ICJpYW1hcGlrZXkiLCAicGFzc3dvcmQiOiAiSUNCRXJldmJhb2dQYkVTN1NhY2wyczRKS3dBWi0tTG9wRGt6TDMydDRKRTAiIH0sImNhLmljci5pbyI6IHsgImF1dGgiOiAiYVdGdFlYQnBhMlY1T2tsRFFrVnlaWFppWVc5blVHSkZVemRUWVdOc01uTTBTa3QzUVZvdExVeHZjRVJyZWt3ek1uUTBTa1V3IiwgInVzZXJuYW1lIjogImlhbWFwaWtleSIsICJlbWFpbCI6ICJpYW1hcGlrZXkiLCAicGFzc3dvcmQiOiAiSUNCRXJldmJhb2dQYkVTN1NhY2wyczRKS3dBWi0tTG9wRGt6TDMydDRKRTAiIH0sInByaXZhdGUuY2EuaWNyLmlvIjogeyAiYXV0aCI6ICJhV0Z0WVhCcGEyVjVPa2xEUWtWeVpYWmlZVzluVUdKRlV6ZFRZV05zTW5NMFNrdDNRVm90TFV4dmNFUnJla3d6TW5RMFNrVXciLCAidXNlcm5hbWUiOiAiaWFtYXBpa2V5IiwgImVtYWlsIjogImlhbWFwaWtleSIsICJwYXNzd29yZCI6ICJJQ0JFcmV2YmFvZ1BiRVM3U2FjbDJzNEpLd0FaLS1Mb3BEa3pMMzJ0NEpFMCIgfSwiZnIyLmljci5pbyI6IHsgImF1dGgiOiAiYVdGdFlYQnBhMlY1T2tsRFFrVnlaWFppWVc5blVHSkZVemRUWVdOc01uTTBTa3QzUVZvdExVeHZjRVJyZWt3ek1uUTBTa1V3IiwgInVzZXJuYW1lIjogImlhbWFwaWtleSIsICJlbWFpbCI6ICJpYW1hcGlrZXkiLCAicGFzc3dvcmQiOiAiSUNCRXJldmJhb2dQYkVTN1NhY2wyczRKS3dBWi0tTG9wRGt6TDMydDRKRTAiIH0sInByaXZhdGUuZnIyLmljci5pbyI6IHsgImF1dGgiOiAiYVdGdFlYQnBhMlY1T2tsRFFrVnlaWFppWVc5blVHSkZVemRUWVdOc01uTTBTa3QzUVZvdExVeHZjRVJyZWt3ek1uUTBTa1V3IiwgInVzZXJuYW1lIjogImlhbWFwaWtleSIsICJlbWFpbCI6ICJpYW1hcGlrZXkiLCAicGFzc3dvcmQiOiAiSUNCRXJldmJhb2dQYkVTN1NhY2wyczRKS3dBWi0tTG9wRGt6TDMydDRKRTAiIH0sImpwMi5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9LCJwcml2YXRlLmpwMi5pY3IuaW8iOiB7ICJhdXRoIjogImFXRnRZWEJwYTJWNU9rbERRa1Z5WlhaaVlXOW5VR0pGVXpkVFlXTnNNbk0wU2t0M1FWb3RMVXh2Y0VScmVrd3pNblEwU2tVdyIsICJ1c2VybmFtZSI6ICJpYW1hcGlrZXkiLCAiZW1haWwiOiAiaWFtYXBpa2V5IiwgInBhc3N3b3JkIjogIklDQkVyZXZiYW9nUGJFUzdTYWNsMnM0Skt3QVotLUxvcERrekwzMnQ0SkUwIiB9fX0K"},"kind":"Secret","metadata":{"annotations":{},"creationTimestamp":null,"name":"all-icr-io","namespace":"default"},"type":"kubernetes.io/dockerconfigjson"}
-  name: cpe-operator-all-icr-io
-  namespace: cpe-operator-system
-type: kubernetes.io/dockerconfigjson
----
-apiVersion: v1
-kind: Secret
-metadata:
-  name: cpe-operator-cpe-cos-key
-  namespace: cpe-operator-system
-stringData:
-  apiKey: MsCBiToCAQ4m_kqCnYWLD-p3bcXnEsLtbdUoVCoMRGwx
-  authEndpoint: https://iam.cloud.ibm.com/identity/token
-  rawBucketName: cpe-pod-log
-  serviceEndpoint: s3.jp-tok.cloud-object-storage.appdomain.cloud
-  serviceInstanceID: 'crn:v1:bluemix:public:cloud-object-storage:global:a/c512321850cdbb47db3a8735e9ce2f4a:df50b4a1-0a13-4b87-83db-991c76dafca6::'
-type: Opaque
----
-apiVersion: v1
-data:
-  .dockerconfigjson: eyJhdXRocyI6eyJyZXMtY3BlLXRlYW0tZG9ja2VyLWxvY2FsLmFydGlmYWN0b3J5LnN3Zy1kZXZvcHMuY29tIjp7InVzZXJuYW1lIjoic3VueWFuYW4uY2hvb2Nob3RrYWV3MUBpYm0uY29tIiwicGFzc3dvcmQiOiJBS0NwNWZUUXdqMkR2UU5nY1VQUnBwenp2WEZkTTk3OVNOYkRROEZvSHZOZkRNTXFmZGphQ25tQlQ0OVZtNWRwQkRLQ2ZMUDlOIiwiZW1haWwiOiJzdW55YW5hbi5jaG9vY2hvdGthZXcxQGlibS5jb20iLCJhdXRoIjoiYzNWdWVXRnVZVzR1WTJodmIyTm9iM1JyWVdWM01VQnBZbTB1WTI5dE9rRkxRM0ExWmxSUmQyb3lSSFpSVG1kalZWQlNjSEI2ZW5aWVJtUk5PVGM1VTA1aVJGRTRSbTlJZGs1bVJFMU5jV1prYW1GRGJtMUNWRFE1Vm0wMVpIQkNSRXREWmt4UU9VND0ifX19
-kind: Secret
-metadata:
-  name: cpe-operator-res-cpe-team-docker-local
-  namespace: cpe-operator-system
-type: kubernetes.io/dockerconfigjson
----
-apiVersion: v1
 kind: Service
 metadata:
   labels:
@@ -843,35 +809,20 @@ spec:
         - /manager
         env:
         - name: CPE_COS_LOG_APIKEY
-          valueFrom:
-            secretKeyRef:
-              key: apiKey
-              name: cpe-operator-cpe-cos-key
+          value: ""
         - name: CPE_COS_LOG_SERVICE_ID
-          valueFrom:
-            secretKeyRef:
-              key: serviceInstanceID
-              name: cpe-operator-cpe-cos-key
+          value: ""
         - name: CPE_COS_LOG_AUTH_ENDPOINT
-          valueFrom:
-            secretKeyRef:
-              key: authEndpoint
-              name: cpe-operator-cpe-cos-key
+          value: ""
         - name: CPE_COS_LOG_SERVICE_ENDPOINT
-          valueFrom:
-            secretKeyRef:
-              key: serviceEndpoint
-              name: cpe-operator-cpe-cos-key
+          value: ""
         - name: CPE_COS_LOG_RAW_BUCKET
-          valueFrom:
-            secretKeyRef:
-              key: rawBucketName
-              name: cpe-operator-cpe-cos-key
+          value: ""
         - name: PARSER_SERVICE
           value: http://cpe-operator-cpe-parser.cpe-operator-system
         - name: CLUSTER_ID
           value: docker-desktop
-        image: ghcr.io/sunya-ch/cpe/operator-controller:v0.0.1
+        image: ghcr.io/sunya-ch/cpe-operator:dev
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
@@ -927,33 +878,18 @@ spec:
       containers:
       - env:
         - name: CPE_COS_LOG_APIKEY
-          valueFrom:
-            secretKeyRef:
-              key: apiKey
-              name: cpe-operator-cpe-cos-key
+          value: ""
         - name: CPE_COS_LOG_SERVICE_ID
-          valueFrom:
-            secretKeyRef:
-              key: serviceInstanceID
-              name: cpe-operator-cpe-cos-key
+          value: ""
         - name: CPE_COS_LOG_AUTH_ENDPOINT
-          valueFrom:
-            secretKeyRef:
-              key: authEndpoint
-              name: cpe-operator-cpe-cos-key
+          value: ""
         - name: CPE_COS_LOG_SERVICE_ENDPOINT
-          valueFrom:
-            secretKeyRef:
-              key: serviceEndpoint
-              name: cpe-operator-cpe-cos-key
+          value: ""
         - name: CPE_COS_LOG_RAW_BUCKET
-          valueFrom:
-            secretKeyRef:
-              key: rawBucketName
-              name: cpe-operator-cpe-cos-key
+          value: ""
         - name: PUSHGATEWAY_URL
           value: http://pushgateway-prometheus-pushgateway.cpe-monitoring-system:9091
-        image: ghcr.io/sunya-ch/cpe/parser:v0.0.1
+        image: ghcr.io/sunya-ch/cpe-parser:dev
         imagePullPolicy: Always
         name: cpe-parser
         ports:
