@@ -49,19 +49,47 @@ def read_json(data_file):
 
 def get_node_stat(query_data):
     node_stat = query_data['kepler_pod_energy_stat'].groupby(['time']).sum()
-    features = [f for f in node_stat.columns if 'curr' in f and 'cpu_' in f]
+    features = [f for f in node_stat.columns if 'curr' in f and ('cpu_' in f or 'cache_' in f)]
     node_stat = node_stat[features].reset_index()
     node_stat.columns = node_stat.columns.str.replace('curr_', '')
     return node_stat
 
-def get_target_stat(query_data, target='coremark'):
-    pod_energy_stat = query_data['kepler_pod_energy_stat']
-    target_stat = pod_energy_stat[pod_energy_stat['container_name']==target]
-    features = [f for f in target_stat.columns if 'curr_' in f and 'cpu_' in f]
-    target_stat = target_stat.groupby(['time']).sum()[features].reset_index()
-    target_stat.columns = target_stat.columns.str.replace('curr_', '')
-    return target_stat
+def get_total_power(query_data):
+    _node_power = query_data['kepler_node_platform_joules_total'].groupby(['time']).sum()['value'].reset_index()
+    _node_power = _node_power[_node_power['value']>0]
+    _node_power = _node_power[_node_power['value']<1000]
+    return _node_power
 
+def get_cpu_frequency(query_data):
+    cpu_frequency = query_data['kepler_node_cpu_scaling_frequency_hertz']
+    cpu_frequency['cpu'] = cpu_frequency['cpu'].astype(int)
+    cpu_frequency['freq_hz'] = cpu_frequency['value']
+    cpu_frequency = cpu_frequency[['time', 'cpu', 'freq_hz']].groupby(['time', 'cpu']).mean()
+    return cpu_frequency
 
+def get_package_power(query_data):
+    package_energy = query_data['kepler_node_package_joules_total'].groupby(['time', 'package']).sum()
+    _package_energy = package_energy.reset_index()
+    package_power = None
+    for package in pd.unique(_package_energy['package']):
+        df = _package_energy[_package_energy['package'] == int(package)]
+        df = df.sort_values(by=['time']).set_index(['time', 'package'])['value'].diff().dropna()
+        df = df.mask(df.lt(0)).ffill().fillna(0).convert_dtypes()
+        if package_power is None:
+            package_power = df
+        else:
+            package_power = pd.concat([package_power, df])
+    return package_power
 
+import os
+query_output_toppath = "./query_output"
+level = "bm"
+workload = "coremark_4threads_to_32threads_5rep_vm"
 
+if __name__ == '__main__':
+    query_output = os.path.join(query_output_toppath, level, workload + ".json")
+    query_data = read_json(query_output)
+    print(get_node_stat(query_data))
+    print(get_cpu_frequency(query_data))
+    print(get_total_power(query_data))
+    print(get_package_power(query_data))
